@@ -1,0 +1,48 @@
+<div class="mainDiv">
+  <div id="wrapperId" class="wrapper">
+    <div id="childDiv" class="child-div">
+    </div>
+  </div>
+</div>
+<style>
+  .mainDiv{
+    position:relative;
+    left:50%
+  }
+  .wrapper {
+    height: 60px;
+    width: 2px;
+    text-align: -webkit-center;
+    overflow: hidden;
+  }
+
+  .child-div {
+    background: #1d3647;
+    width: 2px;
+    height: 150px;
+    position: relative;
+    transition: all 2s ease 0s;
+    animation: loadingLins 3s infinite;
+    -webkit-animation: loadingLins 3s infinite;
+  }
+
+  @-webkit-keyframes loadingLins {
+    from {
+      top: -180px;
+    }
+
+    to {
+      top: 100px;
+    }
+  }
+
+  @keyframes loadingLins {
+    from {
+      top: -150px;
+    }
+
+    to {
+      top: 100px;
+    }
+  }
+</style>
